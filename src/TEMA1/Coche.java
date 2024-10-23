@@ -3,39 +3,45 @@ package TEMA1;
 
 import java.io.Serializable;
 
-public class Coche implements Serializable {
-    private String matricula;
-    private String marca;
-    private int añoMatriculación;
+public class Coche implements Serializable{
 
-    public Coche(String matricula, String marca, int añoMatriculación) {
-        this.matricula = matricula;
-        this.marca = marca;
-        this.añoMatriculación = añoMatriculación;
-    }
 
-    // Getters y setters para los atributos
-    public String getMatricula() {
-        return matricula;
-    }
+	private static final long serialVersionUID = 1L;
+	private String matricula;
+	private String marca;
+	private int anio;
+	
+	public Coche(String matricula, String marca, int anio) {
+		// TODO Auto-generated constructor stub
+		
+		this.matricula = matricula;
+		this.marca = marca;
+		this.anio = anio;		
+	}
 
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
+	public String getMatricula() {
+		return matricula;
+	}
 
-    public String getMarca() {
-        return marca;
-    }
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
 
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
+	public String getMarca() {
+		return marca;
+	}
 
-    public int getAñoMatriculación() {
-        return añoMatriculación;
-    }
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
 
-    public void setAñoMatriculación(int añoMatriculación) {
-        this.añoMatriculación = añoMatriculación;
-    }
+	public int getAnio() {
+		return anio;
+	}
+
+	public void setAnio(int anio) {
+		this.anio = anio;
+	}	
+	
+
 }
